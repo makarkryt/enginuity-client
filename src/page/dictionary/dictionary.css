@@ -1,0 +1,27 @@
+.main-dictionary{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dictionary-list{
+    margin: 20px 0;
+    padding: 8px;
+    overflow: auto;
+    height: 78vh;
+}
+.dictionary-item{
+    border: 2px solid #fff;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+.dictionary-item:hover{
+    border: 2px solid var(--border-color);
+    transform: translateY(5px);
+}
+.dictionary-item:hover h5{
+    color: var(--main-color) 
+}
+.dictionary-item:hover p{
+    color: var(--text-body-color)
+}

@@ -1,0 +1,109 @@
+.nav{
+    min-height: 100vh;
+    width: 240px;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgb(229, 229, 229);
+    z-index: 1;
+}
+.nav-mobile{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 26vh;/*Какаха*/
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--bg-light);
+}
+.nav-list-mobile button{
+    padding: 8px !important;
+}
+.nav-logo img{
+    border-radius: 8px;
+}
+.nav-section{
+    margin: 4px 0;
+}
+.nav-tools button{
+    min-width: 32px;
+    max-height: 32px;
+}
+.nav-volume{
+    min-width: 20%;
+    border-radius: 50%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.25s ease;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-light);
+}
+.nav-volumeNull{
+    min-width: 40% !important;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-list li{
+    margin: 10px 0;
+}
+.nav-list button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    min-width: 100%;
+    border: 2px solid rgba(132, 216, 255, 0);
+    padding-right: 40px;
+    background-color: var(--blue-color);
+    box-shadow: 0 2px 4px rgba(41, 128, 185, 0.3);
+    background-color: #fff;
+}
+.nav-list-mobile ul{
+    display: flex;
+}
+.nav-list-mobile li{
+    margin: 0 4px;
+}
+.nav-list-mobile button{
+    display: flex;
+    padding-right: 0px;
+}
+/*
+button {
+  background-color: var(--blue-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
+  transition: background-color 0.3s ease;
+}
+  */
+.nav-list button:hover{
+    border: 2px solid var(--main-light-color);
+}
+.nav-list button h1,h2,h3,h4,h5{
+    margin: 0 20px;
+    color: rgb(147, 147, 147);
+}
+.nav-list .active{
+    background-color: rgb(221, 244, 255);
+    border: 2px solid var(--main-light-color);
+}
+.nav-list .active h3{   
+    color: var(--main-color);
+}

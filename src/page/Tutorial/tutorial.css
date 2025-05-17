@@ -1,0 +1,62 @@
+.tutorial{
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      h1, h2 {
+        color: var(--blue-color);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      p { 
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      section {
+        margin-bottom: 80px;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+        border: 2px solid var(--blue-light-color);
+        border-radius: 8px;
+        background: #fff;
+        padding: 25px 30px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      section h2 {
+        margin-top: 0;
+      }
+      .image-placeholder {
+        width: 100%;
+        max-width: 800px;
+        height: 300px;
+        border: 2px dashed var(--border-color);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--blue-light-color);
+        font-style: italic;
+        font-size: 16px;
+        user-select: none;
+        margin: 20px auto 0 auto;
+        background: #fafafa;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px 10px;
+        }
+        p {
+          font-size: 16px;
+        }
+        .image-placeholder {
+          height: 200px;
+          font-size: 14px;
+        }
+      }
+}

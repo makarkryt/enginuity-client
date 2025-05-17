@@ -1,0 +1,11 @@
+.App{
+
+    position: relative;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 14px;
+}

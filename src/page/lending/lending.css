@@ -1,0 +1,141 @@
+
+
+.lending{
+    .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+.about h1,
+.about h2 {
+  color: var(--blue-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about p {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about ul,
+.about ol {
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding-left: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about ul li,
+.about ol li {
+  padding: 6px 0;
+  line-height: 1.5;
+}
+
+section.section {
+  margin-bottom: 70px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+section.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Отзывы */
+.review {
+  background: #f2f7fb;
+  border-left: 4px solid var(--blue-light-color);
+  margin-bottom: 18px;
+  padding: 18px 22px;
+  border-radius: 6px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(41, 128, 185, 0.04);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-author {
+  font-size: 16px;
+  color: var(--text-body-color);
+  text-align: right;
+  margin-top: 6px;
+  font-style: normal;
+}
+
+/* Кнопки */
+button {
+  font-size: 24px;
+  border-radius: 8px;
+    border: 2px solid rgba(132, 216, 255, 0);
+    background-color: var(--blue-color);
+    box-shadow: 0 2px 4px rgba(41, 128, 185, 0.3);
+    background-color: #fff;
+}
+
+button:hover{
+    border: 2px solid var(--main-light-color);
+}
+.lending-img{
+  display: flex;
+  justify-content: center;
+}
+.lending-img img{
+  border-radius: 4px;
+  border: 2px solid var(--main-light-color);
+  margin: 0 auto;
+}
+/* Футер */
+footer {
+  text-align: center;
+  padding: 24px 0 10px 0;
+  color: #777;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
+  .about h1 {
+    font-size: 1.6rem;
+  }
+  .about h2 {
+    font-size: 1.3rem;
+  }
+  .about p,
+  .about ul,
+  .about ol {
+    font-size: 16px;
+  }
+  .review {
+    padding: 14px 16px;
+  }
+  button {
+    width: 100%;
+  }
+}
+}
+
